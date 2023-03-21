@@ -1,0 +1,91 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+}
+.sidebar {
+  position: fixed;
+  top: 0px;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  overflow-x: hidden;
+  overflow-y: auto;
+  border-right: 1px solid #eee;
+  width: 220px;
+  height: 100%;
+  border: 1px solid red;
+  background-color: #d9d9d9;
+}
+.navbar {
+  position: fixed;
+  border: 1px solid green;
+  height: 45px;
+  top: 0;
+  right: 0;
+  width: calc(100% - 220px);
+  z-index: 1000;
+  /* width: auto; */
+  background-color: #d9d9d9;
+}
+.content-section {
+  margin-top: 50px;
+  margin-left: 220px;
+  width: 95%;
+  background-color: #3e2462;
+  height: 100vh;
+  overflow-x: hidden;
+  /* border: 1px solid yellow; */
+}
+.card_custom {
+  background-color: #343450;
+  border: none;
+  color: white;
+  width: 240px;
+  height: 120px;
+  margin-bottom: 1.5rem;
+  box-shadow: 3px 3px 3px 1px rgba(48, 41, 41, 0.62);
+  -webkit-box-shadow: 3px 3px 3px 1px rgba(48, 41, 41, 0.62);
+  -moz-box-shadow: 3px 3px 3px 1px rgba(48, 41, 41, 0.62);
+}
+.card_tile {
+  background-color: #f4d03f;
+  width: 100%;
+  height: 10px;
+  border-radius: 5px 5px 0px 0px;
+}
+.card-title {
+  margin-top: 0.5rem;
+}
+.card_custom p {
+  font-weight: 500;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.appointment-timeline {
+  color: white;
+  font-weight: 500;
+  margin-left: 20px;
+  margin-bottom: 5px;
+}
+.col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 550px) {
+  .sidebar {
+    display: none;
+  }
+  .navbar {
+    width: 100%;
+  }
+  .content-section {
+    margin-left: 0;
+  }
+}
